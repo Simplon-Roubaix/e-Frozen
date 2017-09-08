@@ -12,8 +12,8 @@ include ("header.php");?>
       <article class="col s12 m6">
         <div class="card">
           <figure class="card-image">
-            <img <?php echo $value ['image'] ?> >
-            <span  class="card-title"> <?php echo $value ['titre'] ?></span>
+            <img src="<?php echo $value ['image'] ?>" >
+            <span > <?php echo $value ['titre'] ?></span>
             <span> <?php echo $value ['prix'] ?> </span>
             <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
           </figure>
@@ -29,6 +29,3 @@ include ("header.php");?>
 <?php endforeach; ?>
 
 <?php include ('footer.php') ?>
-
-
-      
