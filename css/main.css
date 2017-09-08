@@ -60,7 +60,8 @@ textarea {
 body {
   font-family: 'Amatic SC', cursive;
 }
-#header {
+
+header {
   background-image: url("../image/snow.jpg");
 }
 
@@ -68,10 +69,33 @@ body {
 
 
 
+
+
+
+
 /**************************************************************************
 ********************MOBILE**********************************************************/
+h1 {
+  top: 350px;
+  font-size: 30px;
+}
+img {
+  width: 150px;
+  align-items: center;
 
+}
+#container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
 
+figure {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
 
 
 
@@ -93,6 +117,23 @@ body {
 /************************************************************
 *****************TABLETTE***********************************/
 @media only screen and (min-width: 768px) {
+  #header {
+  width: 100%;
+  margin: auto;
+  display: inline-flex;
+
+
+  }
+
+
+  h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+
+  }
+
 
 }
 
@@ -100,7 +141,9 @@ body {
 /***************************************************************
 *****************************DESKTOP********************************/
 @media only screen and (min-width: 992px) {
-
+h1 {
+  font-size: 80px;
+}
 }
 
 

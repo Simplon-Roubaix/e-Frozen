@@ -1,13 +1,3 @@
-<!-- ma partie -->
-
-
-
-<!-- ta partie -->
-
-
-
-
-
 <!doctype html>
 <html class="no-js" lang="fr">
     <head>
