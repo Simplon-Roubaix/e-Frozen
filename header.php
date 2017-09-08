@@ -4,15 +4,13 @@
 
       <div class="header">
         <figure>
-        <img class="responsive-img" src="image/logo.jpg" alt="logo">
+        <img class="responsive-img" src="<?php echo $infosSite['logo'];?>" alt="logo">
       </figure>
       <div id="container">
-        <h1>E.Frozen</h1>
-        <span>Welcome to my website on products dysney Frozen</span>
+        <h1><?php echo $infosSite['titre'];?></h1>
+        <span><?php echo $infosSite['sousTitre'];?></span>
       </div>
       </div>
 
 
 </header>
-
-</body>
