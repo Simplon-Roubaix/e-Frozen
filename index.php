@@ -1,8 +1,7 @@
-
-
 <?php
 require ('products.php');
-include ("header.php");?>
+require ('infoSite.php');
+include ('header.php');?>
 
 <!--cartes des produits-->
 
@@ -28,4 +27,4 @@ include ("header.php");?>
 
 <?php endforeach; ?>
 
-<?php include ('footer.php') ?>
+<?php include ('footer.php'); ?>
