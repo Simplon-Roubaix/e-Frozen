@@ -4,11 +4,9 @@ require ('infoSite.php');
 include ('header.php');?>
 
 <!--cartes des produits-->
-
-<?php foreach ($products as $key => $value): ?>
-
 <div class="container">
   <section class="row">
+<?php foreach ($products as $key => $value): ?>
       <article class="col s12 m6 l4">
         <div class="card">
           <figure class="card-image">
@@ -22,11 +20,8 @@ include ('header.php');?>
           </div>
         </div>
       </article>
-    </section>
-</div>
-
-
-
 <?php endforeach; ?>
+</section>
+</div>
 
 <?php include ('footer.php'); ?>
