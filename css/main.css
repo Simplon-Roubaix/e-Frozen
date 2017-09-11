@@ -65,12 +65,16 @@ header {
   background-image: url("../image/snow.jpg");
 }
 
+footer {
+  background-image: url("../image/snow.jpg");
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+}
 
-
-
-
-
-
+footer p {
+  margin: 0 !important;
+}
 
 
 /**************************************************************************
@@ -102,19 +106,6 @@ header figure {
   width: 100% !important;
   margin: 0 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
