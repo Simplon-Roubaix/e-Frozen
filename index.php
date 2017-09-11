@@ -13,7 +13,7 @@ include ('header.php');?>
             <img src="<?php echo $value ['image'] ?>" >
             <span > <?php echo $value ['titre'] ?></span>
             <span> <?php echo $value ['prix'] ?> </span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+            <a class="btn-floating halfway-fab waves-effect waves-light red" href="detailProduit.php?article=<?php echo $key; ?>"><i class="material-icons">add</i></a>
           </figure>
           <div class="card-content">
             <p> <?php echo $value ['mini_description'] ?> </p>
