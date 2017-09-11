@@ -1,6 +1,4 @@
-<<?php
-
-
+<?php
 $products = array (
   1 => array('titre'=>'Barbies Anna & Elsa',
   'prix'=>'35€',
@@ -26,8 +24,5 @@ $products = array (
   'descriptif3'=>'Integer commodo velit diam, sed volutpat augue malesuada at. Vestibulum in accumsan leo, ut bibendum turpis. Mauris sit amet molestie massa.',
   'mini_description'=> ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut imperdiet risus. In dignissim leo at ligula pretium tincidunt.'),
 
-
   );
-
-
 ?>
