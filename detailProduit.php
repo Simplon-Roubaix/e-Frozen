@@ -1,8 +1,5 @@
 <?php
-//*************** PAGES INFO PHP ***************
-include ('infoSite.php');
-include ('products.php');
-
-//*************** HEADER ***************
+require ('products.php');
+require ('infoSite.php');
 include ('header.php');
 ?>
