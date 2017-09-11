@@ -1,8 +1,7 @@
-
-
 <?php
 require ('products.php');
-include ("header.php");?>
+require ('infoSite.php');
+include ('header.php');?>
 
 <!--cartes des produits-->
 <div class="container">
@@ -25,4 +24,4 @@ include ("header.php");?>
 </section>
 </div>
 
-<?php include ('footer.php') ?>
+<?php include ('footer.php'); ?>
