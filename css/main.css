@@ -80,21 +80,27 @@ h1 {
   font-size: 30px;
 }
 img {
-  width: 150px;
+  width: 100%;
   align-items: center;
 
 }
+
 #container {
   width: 100%;
   margin: auto;
   text-align: center;
 }
 
-figure {
+header figure {
   width: 150px;
   display: flex;
   align-items: center;
   margin: auto;
+}
+
+.row {
+  width: 100% !important;
+  margin: 0 !important;
 }
 
 
