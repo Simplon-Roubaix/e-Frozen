@@ -1,6 +1,25 @@
+<?php
+			// Connexion à la base de données
+			try
+			{
+				$bdd = new PDO('mysql:host=localhost;dbname=frozen;charset=utf8', 'root', 'simplon2017');
+			}
+			catch(Exception $e)
+			{
+							die('Erreur : '.$e->getMessage());
+			}
+// requete mysql:On récupère les infos
+			$req = $bdd->query('SELECT * FROM info_site');
+
+			//affichage resultat de la requete//
+			$donnees= $req->fetch();
+			?>
+
+
+
 		<footer>
-			<p>Design and conception by <?php echo $infosSite['auteur']; ?> .</p>
-			<p>On <?php echo $infosSite['date']; ?> .</p>
+			<p>Design and conception by <?php echo $donnees['auteur']; ?> .</p>
+			<p>On <?php echo $donnees['date']; ?> .</p>
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
