@@ -28,3 +28,17 @@
       		</div>
       	</div>
 	</header>
+
+  <form action="connexion.php" method="post" class="form-inline">
+        <div class="form-group">
+
+          <label for="inputPassword4">Password</label>
+
+          <input type="password" name="mot_de_passe" id="inputPassword4" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+
+          <button type="submit" value="valider">Submit</button>
+          <form action="deconnexion.php" method="post">
+            <button type="submit" value="valider">Déconnexion</button>
+          </form>
+        </div>
+      </form>
