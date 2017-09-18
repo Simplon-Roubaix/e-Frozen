@@ -72,8 +72,6 @@
         </div>
       </form>
 
-      <form action="deconnexion.php" method="post">
-        <button type="submit" value="valider">Déconnexion</button>
-      </form>
+      
     </body>
     </html>
