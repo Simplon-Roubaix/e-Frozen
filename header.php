@@ -55,7 +55,7 @@
         $req->closeCursor();
         ?>
 
-  <form action="connexion.php" method="post" class="form-inline">
+  <form id="membre" action="connexion.php" method="post" class="form-inline">
         <div class="form-group">
 
           <label for="pseudo">Pseudo</label>
@@ -75,3 +75,5 @@
       <form action="deconnexion.php" method="post">
         <button type="submit" value="valider">Déconnexion</button>
       </form>
+    </body>
+    </html>

@@ -83,6 +83,25 @@ footer p {
   border: 2px solid rgb(89, 209, 237);
 }
 
+/**************page connexion***************************/
+#ajout {
+width: 100%;
+  margin: auto;
+  background-color: rgb(89, 209, 237);
+
+}
+
+label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#ajout button {
+margin-top: 50px;
+}
+
 /**************************************************************************
 ********************MOBILE**********************************************************/
 h1 {
