@@ -1,13 +1,7 @@
 <?php
 			// Connexion à la base de données
-			try
-			{
-				$bdd = new PDO('mysql:host=localhost;dbname=frozen;charset=utf8', 'root', 'simplon2017');
-			}
-			catch(Exception $e)
-			{
-							die('Erreur : '.$e->getMessage());
-			}
+            include('connectToDb.php');
+			
 // requete mysql:On récupère les infos
 			$req = $bdd->query('SELECT * FROM info_site');
 
