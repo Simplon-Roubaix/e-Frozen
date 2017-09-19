@@ -31,11 +31,12 @@ else
 
 if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
 {
-    echo 'Bonjour'. $_SESSION['pseudo'] , ' vous pouvez ajouter un nouvel article grace au formulaire ci-dessous: ';
-}
+
 ?>
 <form action="deconnexion.php" method="post">
   <button type="submit" value="valider">Déconnexion</button>
 </form>
+<p id="bonjour"> <?php  echo 'Bonjour '. $_SESSION['pseudo'] , ' vous pouvez ajouter un nouvel article grace au formulaire ci-dessous: ';
+}?></p>
 <?php include ('formulaire.php');?>
 <?php include ('footer.php');?>

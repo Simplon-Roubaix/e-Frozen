@@ -85,9 +85,10 @@ footer p {
 
 /**************page connexion***************************/
 #ajout {
-width: 100%;
+  width: 100%;
   margin: auto;
-  background-color: rgb(89, 209, 237);
+  background-color: white;
+  padding: 20px;
 
 }
 
@@ -100,6 +101,7 @@ label {
 
 #ajout button {
 margin-top: 50px;
+text-align: center;
 }
 
 /*******************espace connexion***********************/
@@ -111,6 +113,10 @@ margin-top: 50px;
   width: 130px;
   background-color: rgb(89, 209, 237);
   padding: 10px;
+}
+
+#bonjour {
+  font-size: 25px;
 }
 
 /**************************************************************************
