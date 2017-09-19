@@ -7,7 +7,7 @@ include ('header.php');
 
 
 // Vérification des identifiants
-$req = $bdd->prepare('SELECT id FROM cpte_user WHERE pseudo = :pseudo AND login = :login');
+$req = $bdd->prepare('SELECT id FROM cpte_user WHERE nom = :pseudo AND login = :login');
 $req->execute(array(
     'pseudo' => $_POST['pseudo'],
     'login' => $_POST['login']));
