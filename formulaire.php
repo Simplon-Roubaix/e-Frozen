@@ -1,5 +1,3 @@
-<?php include('header.php') ?>
-
       <form id="ajout">
         <div class="form-group">
           <label for="exampleInputEmail1">Email</label>

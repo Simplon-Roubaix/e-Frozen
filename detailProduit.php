@@ -35,7 +35,8 @@ if(isset($_GET['article']) AND array_key_exists($article, $products))
             </div>
         </div>
     </section>
-<?php  
+<?php
+    $req->closeCursor();
     include ('footer.php');
 }
 else
