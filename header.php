@@ -16,15 +16,62 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+      <?php
+            // Connexion à la base de données
+            try
+            {
+            	$bdd = new PDO('mysql:host=localhost;dbname=frozen;charset=utf8', 'root', 'simplon2017');
+            }
+            catch(Exception $e)
+            {
+                    die('Erreur : '.$e->getMessage());
+            }
+      // requete mysql:On récupère les infos
+            $req = $bdd->query('SELECT * FROM info_site');
+            $reqimg = $bdd->query('SELECT * FROM images WHERE alt=\'logo\'');
+
+            //affichage resultat de la requete//
+            $donnees = $req->fetch();
+            $imag=$reqimg->fetch();
+
+
+            ?>
+
 
 	<header>
       	<div class="header">
         	<figure>
-        		<img class="responsive-img" src="<?php echo $infosSite['logo'];?>" alt="logo">
+        		<img class="responsive-img" src="<?php echo $imag['source'];?>" alt="logo">
       		</figure>
       		<div id="container">
-        		<h1><?php echo $infosSite['titre'];?></h1>
-        		<span><?php echo $infosSite['sousTitre'];?></span>
+        		<h1><?php echo ($donnees['titre']);?></h1>
+        		<span><?php echo ($donnees['sous_titre']);?></span>
       		</div>
       	</div>
 	</header>
+
+  <?php
+         // Fin de la boucle
+        $req->closeCursor();
+        ?>
+
+  <form id="membre" action="connexion.php" method="post" class="form-inline">
+        <div class="form-group">
+
+          <label for="pseudo">Pseudo</label>
+
+          <input type="text" name="pseudo" id="pseudo" class="form-control mx-sm-3">
+
+          <label for="inputPassword4">Password</label>
+
+          <input type="password" name="login" id="inputPassword4" class="form-control mx-sm-3" aria-describedby="passwordHelpInline">
+
+          <button type="submit" value="valider">connexion</button>
+
+
+        </div>
+      </form>
+
+      
+    </body>
+    </html>
