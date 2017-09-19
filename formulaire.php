@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html class="no-js" lang="fr">
     <head>
@@ -24,6 +25,16 @@
         <div class="input-field col s6">
           <input name="titre" type="text" class="validate">
           <label for="titre">Titre</label>
+=======
+      <form id="ajout">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="titre">Titre du produit</label>
+          <input type="text" class="form-control" id="titre">
+>>>>>>> c55507a65443c5ccbc56e3dd4d3def4d2b4ed510
         </div>
         <div class="input-field col s6">
           <input name="prix" type="text" class="validate">

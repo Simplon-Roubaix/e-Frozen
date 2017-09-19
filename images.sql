@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Lun 18 Septembre 2017 à 10:09
+-- Généré le :  Mar 19 Septembre 2017 à 13:38
 -- Version du serveur :  5.7.19-0ubuntu0.16.04.1
--- Version de PHP :  7.0.18-0ubuntu0.16.04.1
+-- Version de PHP :  7.0.22-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `frozen`
+-- Base de données :  `e-frozen`
 --
 
 -- --------------------------------------------------------
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
+  `id_article` int(11) NOT NULL,
   `source` varchar(600) NOT NULL,
   `poid` int(11) NOT NULL,
   `type` varchar(255) NOT NULL,
@@ -38,10 +39,11 @@ CREATE TABLE `images` (
 -- Contenu de la table `images`
 --
 
-INSERT INTO `images` (`id`, `source`, `poid`, `type`, `alt`) VALUES
-(1, 'image/elsaetanna.jpg', 128, 'JPEG', 'barbies'),
-(2, 'image/robe.jpg', 95, 'JPEG', 'robe'),
-(3, 'image/brosse.jpg', 105, 'JPEG', 'brosee');
+INSERT INTO `images` (`id`, `id_article`, `source`, `poid`, `type`, `alt`) VALUES
+(1, 1, 'image/elsaetanna.jpg', 128, 'JPEG', 'barbies'),
+(2, 2, 'image/robe.jpg', 95, 'JPEG', 'robe'),
+(3, 3, 'image/brosse.jpg', 105, 'JPEG', 'brosee'),
+(4, 0, 'image/logo.jpg', 144, 'jpg', 'logo');
 
 --
 -- Index pour les tables exportées
@@ -61,7 +63,7 @@ ALTER TABLE `images`
 -- AUTO_INCREMENT pour la table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

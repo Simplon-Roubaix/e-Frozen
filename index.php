@@ -1,27 +1,40 @@
 <?php
-require ('products.php');
-require ('infoSite.php');
+include('connectToDb.php');
 include ('header.php');
+// récupère les articles et leur image correspondante
+$req = $bdd->query('SELECT img.source src, art.*
+                    FROM articles art
+                    INNER JOIN images img
+                    ON img.id_article = art.id');
 ?>
 
 <!--cartes des produits-->
 <div class="container">
   <section class="row">
-<?php foreach ($products as $key => $value): ?>
+<?php
+while ($donnees = $req->fetch())
+{
+// echo '<pre>';
+// print_r($donnees);
+// echo '<pre>';
+?>
       <article class="col s12 m6 l4">
         <div class="card blue lighten-4">
           <figure class="card-image">
-            <img src="<?php echo $value ['image'] ?>" >
-            <p > <?php echo $value ['titre'] ?></p>
-            <p> <?php echo $value ['prix'] ?> </p>
+            <img src="<?php echo $donnees ['src']; ?>" >
+            <p > <?php echo $donnees ['titre']; ?></p>
+            <p> <?php echo $donnees ['prix']; ?> </p>
           </figure>
           <div class="card-content">
-            <p> <?php echo $value ['mini_description'] ?> </p>
-            <a class="btn-floating  waves-effect waves-light blue" href="detailProduit.php?article=<?php echo $key; ?>"><i class="material-icons">add</i></a>
+            <p> <?php echo $donnees ['mini_contenu']; ?> </p>
+            <a class="btn-floating  waves-effect waves-light blue" href="detailProduit.php?article=<?php echo $donnees['id']; ?>"><i class="material-icons">add</i></a>
           </div>
         </div>
       </article>
-<?php endforeach; ?>
+<?php
+}
+$req->closeCursor();
+?>
 </section>
 </div>
 
