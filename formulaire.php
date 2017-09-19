@@ -17,29 +17,51 @@
     </head>
     <body>
 
-      <form id="ajout">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+        <div class="row">
+    <form id="ajout" method="post" action="cible.php" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="titre" type="text" class="validate">
+          <label for="titre">Titre</label>
         </div>
-        <div class="form-group">
-          <label for="titre">Titre du produit</label>
-          <input type="text" class="form-control" id="titre">
+        <div class="input-field col s6">
+          <input name="prix" type="text" class="validate">
+          <label for="prix">prix</label>
         </div>
-        <div class="form-group">
-          <label for="prix">Prix du produit</label>
-          <input type="text" class="form-control" id="prix">
-        </div>
-        <div class="form-group">
+      </div>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea name="descriptif" class="materialize-textarea"></textarea>
           <label for="descriptif">Descriptif</label>
-          <textarea class="form-control" id="descriptif" rows="3"></textarea>
         </div>
-        <div class="form-group">
-          <label for="image">Ajout fichier</label>
-          <input type="file" class="form-control-file" id="image" aria-describedby="fileHelp">
-        </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </div>
+
+
+
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+
+
+  <input type="submit" value="Valider" />
+
       </form>
+    </div>
+
+
+
+
+
 
 
 
